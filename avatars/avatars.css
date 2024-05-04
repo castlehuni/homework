@@ -1,0 +1,35 @@
+.avatars-wrapper {
+  width: 68px;
+  position: relative;
+}
+
+/* 아바타 이미지 */
+.avatars-image {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+}
+
+/* 회색 상태 창 */
+.status-grey-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+
+/* 초록색 상태 창 */
+.status-green-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #4cfe88;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
