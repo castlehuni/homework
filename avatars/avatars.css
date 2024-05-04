@@ -1,6 +1,35 @@
+/* 남성 그룹과 여성 그룹을 포함한 div */
+.people-group {
+  width: 800px;
+  min-height: 500px;
+  margin: 100px auto;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+}
+/* 여성 그룹 */
+.woman-group {
+  display: flow-root;
+  padding-left: 10px;
+  width: 360px;
+  margin: 150px auto 0;
+}
+
+/* 남성 그룹 */
+.man-group {
+  clear: both;
+  display: flow-root;
+  padding-left: 10px;
+  width: 360px;
+  margin: auto;
+}
+
+/* 아바타 이미지와 상태창 결합한 그룹 */
 .avatars-wrapper {
   width: 68px;
   position: relative;
+  float: left;
+  margin: 10px 10px;
 }
 
 /* 아바타 이미지 */
