@@ -21,7 +21,7 @@
   display: flow-root;
   padding-left: 10px;
   width: 360px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* 아바타 이미지와 상태창 결합한 그룹 */
@@ -61,4 +61,30 @@
   position: absolute;
   top: 45px;
   left: 45px;
+}
+
+/* flex를 사용한 레이아웃 구성 */
+@supports (display: flex) {
+  .people-group {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .groups:nth-child(1) {
+    order: 2;
+    margin-top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .groups:nth-child(2) {
+    order: 1;
+    display: flex;
+    margin-top: 150px;
+    flex-flow: row nowrap;
+  }
+
+  .avatars-wrapper {
+    float: none;
+  }
 }
