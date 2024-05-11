@@ -1,0 +1,173 @@
+/* 스타일 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+  font: inherit;
+}
+
+body,
+html {
+  margin: 0;
+  font-size: 1rem;
+  color: #181818;
+}
+
+/* 숨김 요소를 위함 */
+.sr-only {
+  background-color: red;
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 헤더 부분 */
+.header {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .logo {
+    margin: 0 auto;
+    width: 230px;
+  }
+}
+
+/* 로그인 정보 input 부분 스타일 지정 */
+.login-input {
+  display: flex;
+  margin-top: 0.5rem;
+
+  input {
+    border: 1px solid #dadada;
+    font-size: 1rem;
+    background-color: #fff;
+    height: 2.8125rem;
+    flex-grow: 1;
+    padding: 0.0625rem 0.0625rem 0.0625rem 0.625rem;
+  }
+}
+
+/* 포커스 스타일 */
+.login-input input:focus {
+  outline: 1px solid #03cf5d;
+  background-color: #e9f0fd;
+}
+
+/* 로그인 영역 가운데 정렬 */
+.naver-login {
+  margin: 0 auto;
+}
+
+/* 폼 내부의 버튼을 포함한 로그인 블록을 위한 css */
+.login-info {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 20px;
+}
+
+/* 로그인 버튼 부분 스타일링 */
+.loginButton {
+  height: 2.8125rem;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  background-color: #03cf5d;
+  color: #fff;
+  border: none;
+}
+
+/* 버튼 아래 영역 스타일링 */
+.subCheck {
+  display: flex;
+  margin: 0.625rem 20px;
+  justify-content: space-between;
+
+  span {
+    padding-right: 0.5rem;
+  }
+}
+
+/* 로그인 유지 상태 영역 스타일링 */
+.staying-id {
+  position: relative;
+
+  input {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.1rem;
+    appearance: none;
+  }
+
+  label {
+    background: url(./icons/unchecked.svg) no-repeat 0 0 / contain;
+    padding-left: 1.8rem;
+    margin-right: 0.3125rem;
+    margin-left: 0.25rem;
+  }
+
+  input:checked + label {
+    background: url(./icons/checked.svg) no-repeat 0 0 / contain;
+  }
+}
+
+/* ip 보안 영역 스타일링 */
+.security-ip {
+  a:hover {
+    color: #03cf5d;
+  }
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;
+  }
+
+  .subCheck {
+    justify-content: end;
+  }
+
+  .security-ip {
+    display: none;
+  }
+}
+
+/* 데스크탑 스타일 */
+@media (min-width: 768px) {
+  .naver-login {
+    width: 31.25rem;
+  }
+}
