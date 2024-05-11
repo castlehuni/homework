@@ -53,6 +53,11 @@ html {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+/* 기본 포커스 속성 지정 */
+*:focus {
+  outline: 2px solid #24388d;
+}
+
 /* 헤더 부분 */
 .header {
   width: 100%;
@@ -82,7 +87,7 @@ html {
 
 /* 포커스 스타일 */
 .login-input input:focus {
-  outline: 1px solid #03cf5d;
+  outline: 2px solid #03cf5d;
   background-color: #e9f0fd;
 }
 
